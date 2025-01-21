@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts and Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Close Button Styles */
+    .close-btn {
+      position: absolute;
+      top: 120px;
+      right: 200px;
+      width: 50px;
+      height: 50px;
+      background-color: #ff3d3d;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 34px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .close-btn:hover {
+      background-color: #ff1a1a;
+    }
+
+    /* Title Styles */
+    .project-title {
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 120px; /* Adds space below the title */
+  }
+
+    /* Gray Box Container Styles */
+    .gray-box {
+      background-color: #2c2727;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 80%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden; /* Hide any overflow */
+      margin-top: 40px; /* Add space above the video */
+    }
+
+    /* Image Container Styles */
+    .image-container {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 300px;
+      height: auto;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Video Container Styles */
+    .video-container {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio for the video */
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    /* Responsive Video Styling */
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Line Styles */
+    .line {
+      height: 5px;
+      margin: 40px auto;
+      width: 80%;
+      background: linear-gradient(to right, #6c6f6c 0%, #9ca739 50%, #73790e 100%);
+    }
+
+    /* Information Paragraph Styles */
+    .info-paragraph {
+      text-align: justify;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 20px;
+      padding-left: 200px;
+      padding-right: 180px;
+      width: 1500px;
+    }
+
+    /* Work Header Styles */
+    .work-header {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      padding-left: 160px;
+      margin-top: 30px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <!-- Project Title -->
+  <div class="project-title">Quize Master</div>
+
+  <!-- Close Button -->
+  <button class="close-btn" onclick="closePage()">×</button>
+
+  <!-- Gray Box for Video -->
+  <div class="gray-box">
+    <!-- Video Container -->
+    <div class="video-container">
+      <!-- Embedding YouTube Video -->
+      <iframe src="https://www.youtube.com/embed/v_4u_yZcLQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Line After Video -->
+  <div class="line"></div>
+
+  <!-- About game Header -->
+  <div class="work-header">About game:</div>
+
+  <!-- Information Paragraph -->
+  <div class="info-paragraph">
+    <ul>
+      <li>A 2D mobile game designed specifically for children, where players connect letters to form words, promoting early language development and vocabulary building.</li>
+      <li>The game features dynamic and interactive word puzzles with varying difficulty levels to ensure age-appropriate challenges and continuous learning.</li>
+      <li>Educational content designed to enhance children's cognitive skills and word recognition in a fun, interactive environment.</li>
+    </ul>
+  </div>
+
+  <!-- Work Header -->
+  <div class="work-header">My Work:</div>
+
+  <!-- Information Paragraph -->
+  <div class="info-paragraph">
+    <ul>
+      <li>Designed and developed the entire 2D mobile game, focusing on creating a fun and educational experience tailored to children.</li>
+      <li>Managed and parsed large JSON responses to dynamically generate word puzzles and adjust difficulty levels based on the player's progression.</li>
+      <li>Integrated cheerful, child-appropriate sound effects that enhanced the overall gaming atmosphere and maintained player engagement.</li>
+      <li>Handled the complex game logic, including word formation rules and data management, to ensure seamless gameplay and smooth progression.</li>
+    </ul>
+  </div>
+
+  <!-- Tool Header -->
+  <div class="work-header">Tools:</div>
+
+  <!-- Information Paragraph -->
+  <div class="info-paragraph">
+    <p>(Unity 2D), Libraries:(Json), Language:(C#)</p>
+  </div>
+
+  <!-- Line Below Last Paragraph -->
+  <div class="line"></div>
+
+  <!-- Gray Box with Images -->
+  <div class="gray-box">    
+
+    <!-- Images -->
+    <div class="image-container">
+      <img src="images/Page_1.jpg" alt="Page_1">
+      <img src="images/Page_2.jpg" alt="Page_2">
+      <img src="images/Page_3.jpg" alt="Page_3">
+      <img src="images/Page_4.jpg" alt="Page_4">
+      <img src="images/Page_5.jpg" alt="Page_5">
+      <img src="images/Page_6.jpg" alt="Page_6">
+      <img src="images/Page_7.jpg" alt="Page_7">
+    </div>
+  </div>
+
+  <script>
+    // Function to redirect to the specified URL when close button is clicked
+    function closePage() {
+      window.location.href = "file:///E:/Portfolio/Portfolio-Website-Template/index.html#"; // Redirects to the specified URL
+    }
+  </script>
+
+</body>
+</html>
